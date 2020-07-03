@@ -26,18 +26,6 @@ pinMode(pin8, OUTPUT);
 }
 
 void loop() {
-//digitalWrite(pin1, HIGH);
-//digitalWrite(pin2, HIGH);
-//digitalWrite(pin3, HIGH);
-//digitalWrite(pin4, HIGH);
-//digitalWrite(pin5, HIGH);
-//digitalWrite(pin6, HIGH);
-//digitalWrite(pin7, HIGH);
-//digitalWrite(pin8, HIGH);
-// 00000001 = pin1 on
-//if (pinVal[0] == 1) {
-//  digitalWrite(pin1, HIGH);
-//}
 for( int num=0; num<=7; num++) {
   pin = num+2;
   if(pinVal[arr][num] == 1){
@@ -46,8 +34,5 @@ for( int num=0; num<=7; num++) {
   else if(pinVal[arr][num] == 0) {
     digitalWrite(pin, LOW);
   }
-//  Serial.println(pin);
-//  Serial.println(pinVal[num]);
 }
-delay(8888);
 }
