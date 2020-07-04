@@ -12,6 +12,7 @@ int pinVal[10][8] = {
   {1, 1, 1, 1, 1, 1, 1, 0}, //8
   {1, 1, 1, 1, 0, 1, 1, 0} //9
 };
+// I have the pins wired wrong and I need to fix the numbers
 void setup() {
   Serial.begin(9600);
   for (pin = 2; pin <= 9; pin++) {
